@@ -1,0 +1,9 @@
+matplotlib
+pandas
+seaborn
+textblob
+vaderSentiment
+jupyterlab
+elasticsearch
+requests
+python-dotenv

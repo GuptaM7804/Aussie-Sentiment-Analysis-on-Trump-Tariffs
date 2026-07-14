@@ -1,0 +1,46 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: harvest-cronjob
+spec:
+  schedule: "0 * * * *"  
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: harvest-container
+            image: yixiang9977/harvester:latest
+            env:
+            - name: REDDIT_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: harvest-secrets
+                  key: REDDIT_CLIENT_ID
+            - name: REDDIT_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: harvest-secrets
+                  key: REDDIT_CLIENT_SECRET
+            - name: REDDIT_USER_AGENT
+              valueFrom:
+                secretKeyRef:
+                  name: harvest-secrets
+                  key: REDDIT_USER_AGENT
+            - name: MASTODON_AU_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: harvest-secrets
+                  key: MASTODON_AU_TOKEN
+            - name: MASTODON_AUS_SOCIAL_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: harvest-secrets
+                  key: MASTODON_AUS_SOCIAL_TOKEN
+            - name: ES_HOST
+              value: "https://elasticsearch-master.elastic.svc.cluster.local:9200"
+            - name: ES_USER
+              value: "elastic"
+            - name: ES_PASS
+              value: "elastic"
+          restartPolicy: OnFailure

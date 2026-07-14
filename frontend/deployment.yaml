@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jupyter-notebook
+  labels:
+    app: jupyter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jupyter
+  template:
+    metadata:
+      labels:
+        app: jupyter
+    spec:
+      containers:
+      - name: jupyter
+        image: yixiang9977/jupyter-notebook:latest
+        ports:
+        - containerPort: 8888
+        args: ["start-notebook.sh", "--NotebookApp.token=''"]  
+        resources:
+          limits:
+            memory: "1Gi"
+            cpu: "500m"

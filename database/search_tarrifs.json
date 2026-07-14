@@ -1,0 +1,17 @@
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "content": "tariffs"}},
+	{ "match": { "content": "trump"}}
+      ],
+      "minimum_should_match": 1,
+      "filter": {
+        "range": {
+	  "gte": "2024-11-05T00:00:00Z",
+	  "lte": "2025-05-01T00:00:00Z"
+	}
+      }
+    }
+  }
+}

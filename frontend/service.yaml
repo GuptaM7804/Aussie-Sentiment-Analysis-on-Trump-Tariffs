@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jupyter-service
+spec:
+  type: NodePort  # or LoadBalancer if using Ingress
+  selector:
+    app: jupyter
+  ports:
+    - protocol: TCP
+      port: 8888
+      targetPort: 8888
+      nodePort: 30088  # Optional: pick a port in range 30000–32767

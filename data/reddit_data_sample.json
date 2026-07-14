@@ -1,0 +1,74 @@
+[
+  {
+    "id": "t3_abc123",
+    "title": "Trump's tariffs impacting Australian wine exports",
+    "selftext": "New tariffs imposed by the Trump administration have caused a 30% drop in Australian wine exports to the US. Many small wineries are struggling to stay afloat.",
+    "author": "aussie_wine_lover",
+    "created_utc": 1672531200,
+    "subreddit": "australianpolitics",
+    "upvotes": 142,
+    "downvotes": 28,
+    "num_comments": 45,
+    "url": "https://www.reddit.com/r/australianpolitics/comments/abc123",
+    "comments": [
+      {
+        "id": "t1_def456",
+        "author": "econ_enthusiast",
+        "body": "This is exactly what happens when protectionist policies go too far. The US consumers lose access to quality products, and Australian businesses suffer.",
+        "created_utc": 1672534800,
+        "upvotes": 32,
+        "downvotes": 5,
+        "comments": [
+          {
+            "id": "t1_ghi789",
+            "author": "free_market_advocate",
+            "body": "But domestic US winemakers are benefiting. There are always winners and losers in trade policy.",
+            "created_utc": 1672538400,
+            "upvotes": 15
+          }
+        ]
+      },
+      {
+        "id": "t1_jkl012",
+        "author": "trump_supporter_au",
+        "body": "Actually this is a smart move by Trump. Australia needs to be tougher in negotiations!",
+        "created_utc": 1672542000,
+        "upvotes": 8,
+        "downvotes": 42
+      }
+    ]
+  },
+  {
+    "id": "t3_mno345",
+    "title": "Analysis: How Trump's tariffs affect Australian aluminum industry",
+    "selftext": "I absolutely hate trump's tariffs. They are hurting our aluminium industry and causing job losses. Man wtf is going on?",
+    "author": "metal_economist",
+    "created_utc": 1672617600,
+    "subreddit": "ausfinance",
+    "upvotes": 87,
+    "downvotes": 12,
+    "num_comments": 23,
+    "url": "https://www.reddit.com/r/ausfinance/comments/mno345",
+    "comments": [
+      {
+        "id": "t1_pqr678",
+        "author": "industry_insider",
+        "body": "Our company has already shifted 40% of production to Southeast Asia because of these tariffs.",
+        "created_utc": 1672621200,
+        "upvotes": 29
+      }
+    ]
+  },
+  {
+    "id": "t3_stu901",
+    "title": "Do you support Trump's tariffs? [POLL]",
+    "selftext": "Simple yes/no - do you think the Trump administration's tariffs on Australian goods are justified?",
+    "author": "poll_creator",
+    "created_utc": 1672704000,
+    "subreddit": "australia",
+    "upvotes": 215,
+    "downvotes": 37,
+    "num_comments": 182,
+    "url": "https://www.reddit.com/r/australia/comments/stu901"
+  }
+]

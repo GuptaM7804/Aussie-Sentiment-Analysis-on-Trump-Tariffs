@@ -1,0 +1,23 @@
+{
+  "settings" : {
+    "index" : {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "author": { "type": "text" },
+      "instance": { "type": "keyword" },
+      "content": { "type": "text" },
+      "timestamp": { "type": "date" },
+      "followers_count": { "type": "integer"},
+      "replies_count": { "type": "integer" },
+      "reblogs_count": { "type": "integer" },
+      "favourites_count": { "type": "integer" },
+      "sentiment": { "type": "float" },
+      "topic": { "type": "keyword" }
+    }
+  }
+}

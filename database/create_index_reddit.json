@@ -1,0 +1,22 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "author": { "type": "text" },
+      "subreddit": { "type": "keyword" },
+      "title": { "type": "text" },
+      "body": { "type": "text" },
+      "timestamp": { "type": "date" },
+      "sentiment": { "type": "float" },
+      "upvotes": { "type": "integer" },
+      "downvotes": { "type": "integer" },
+      "topic": { "type": "keyword" }
+    }
+  }
+}
